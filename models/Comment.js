@@ -5,7 +5,7 @@ const sequelize = require('../config/connection'); //import database connection
 class Comment extends Model {}
 
 //set up fields and rules for COMMENT model
-Comment.init (
+Comment.init(
     {
         // define columns
         id: {
@@ -18,16 +18,12 @@ Comment.init (
             type: DataTypes.TEXT,
             allowNull: false,
         },
-        // createdAt: {
-        //     type: DataTypes.DATE,
-        //     defaultValue: DataTypes.NOW,
-        // },
         username_id: {
             type: DataTypes.INTEGER,
             references: {
                 //references the user model id
                 model: 'user',
-                key:'id',
+                key:'id'
             },
         },
         article_id: {
@@ -35,7 +31,7 @@ Comment.init (
             references: {
                 //references the article model id
                 model: 'article',
-                key:'id',
+                key:'id'
             },
         },
         
@@ -43,12 +39,10 @@ Comment.init (
     {
         sequelize,
         timestamps: true,
-        createdAt: true,
-        updatedAt: false,
         freezeTableName: true,
         modelName: 'comment',
     }
 
 );
 
-model.exports = Comment;
+module.exports = Comment;

@@ -1,4 +1,4 @@
-const { Model, DataTypes} = require('sequelize'); //import part of sequelize library
+const {Model, DataTypes} = require('sequelize'); //import part of sequelize library
 const bcrypt = require('bcrypt'); //import bcrypt for password
 const sequelize = require('../config/connection'); //import database connection
 
@@ -9,7 +9,7 @@ class User extends Model{
     }
 }
 
-User.init (
+User.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -33,7 +33,7 @@ User.init (
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [6],
+                len: [8],
             },
         },
     },
