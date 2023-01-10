@@ -1,0 +1,12 @@
+[
+    {
+        "content": "That helps me understand what MVC is. Thank you.",
+        "username_id": 3,
+        "article_id": 1
+    },
+    {
+        "contents": "So Sequelize does abstract SQL commands. I have lots more to learn!",
+        "username_id": 1,
+        "article_id": 3
+    }
+]

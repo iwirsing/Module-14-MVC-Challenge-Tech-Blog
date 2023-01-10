@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
@@ -18,5 +19,14 @@
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
     "sequelize": "^6.28.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwirsing/Module-14-MVC-Challenge-Tech-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iwirsing/Module-14-MVC-Challenge-Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/iwirsing/Module-14-MVC-Challenge-Tech-Blog#readme"
 }

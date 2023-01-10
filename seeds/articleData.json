@@ -1,0 +1,17 @@
+[
+    {
+        "title":"What is MVC?",
+        "content": "MVC stands for Model View Controller model framework. It is an architectural pattern that separates the application into three main components: the model, the view and the controller. Each component handle specific development logic of the application. Model corresponds to all data-related logic that the user works with. This can be the data that is being transferred between the View and the  Controller. The View is used for the the user interface logic of the application while the Controller acts as the middleman between Model and View to process incoming requests, manipulate data using the Model, apply logic and render data (View) to the user. ",
+        "username_id": 1
+    },
+    {
+        "title":"What is ORM?",
+        "content": "ORM stands for Object-Relational Mapping. It is a technique in linking objects in object-oriented programs and relational database systems. This way it lets people interact with databases in their programming languages of choice rather than just using plain SQL. ORM works as a translator that converts code from one form to another, basically creating a map between two different representations of data: the classes and class instances (objects) of an object-oriented programming language, and the tables and rows of a relational database. Different database systems access data in myriad ways so the advantage of using ORM is that it helps maintain objects even when the sources and apps they access change over time. ",
+        "username_id": 2
+    },
+    {
+        "title":"What is Sequelize?",
+        "content": "Sequelize is a popular open-source promise-based Object-Relational Mapper (ORM) for Node.js. This is a library responsible for managing data in applications that are written in object oriented programming language and persistently store data in a database. Sequelize supports the dialects PostgreSQL, MySQL, SQLite and MSSQL and features solid transaction support, relations, read replication and more. Sequelize features promises, model hooks, database synchronization, database migrations, model validations, raw queries, data seeding, scopes and more.",
+        "username_id": 3
+    }
+]

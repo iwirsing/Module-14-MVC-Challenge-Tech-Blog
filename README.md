@@ -130,3 +130,10 @@ You are required to submit BOTH of the following for review:
 
 ---
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+
+IVY
+sources:
+1. https://codewithhugo.com/sequelize-data-types-a-practical-guide/
+2. https://stackoverflow.com/questions/16847672/is-there-a-simple-way-to-make-sequelize-return-its-date-time-fields-in-a-partic
+3. https://sebhastian.com/sequelize-timestamps/
