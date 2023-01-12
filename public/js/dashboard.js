@@ -2,7 +2,7 @@
 const articleFormHandler = async (event) => {
     event.preventDefault();
     const title = document.querySelector('#article-title').value.trim();
-    const content = document.querySelector('#article-content').value;
+    const content = document.querySelector('#article-content').value.trim();
 
     console.log('line 7 dashboard.js : ',content,title);
 
