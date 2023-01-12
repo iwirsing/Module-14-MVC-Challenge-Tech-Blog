@@ -1,0 +1,32 @@
+
+<div class="container article-display">
+    <h4>Dashboard: your blog headquarters...</h4>
+</div>
+
+<div class="container article-display">
+
+
+<article class="article">
+<h5>Your Published Articles:</h5>
+    {{#each articles as |article| }}
+        {{>articles article}}
+    {{/each}}
+
+</article>
+
+</div>
+
+<div class="container article-create">
+    <h5>Create New Article</h5>
+
+    <form class="form article-form">
+        <div class="form-group">
+            <label for="article-content" class="form-label">Content</label>
+            <input class="form-input w-100" type="text" id="article-content" />
+        </div>
+        <div class="form-group">
+        <button class="btn btn-danger" type="article" id="article">Publish</button>
+        </div>
+    </form>
+
+</div>

@@ -93,6 +93,7 @@ router.get('/login', (req, res) => {
     res.render('login');
   });
 
+  //to be deleted
 //get all articles with comments
 router.get('/comment', async (req,res)=>{
     try{
