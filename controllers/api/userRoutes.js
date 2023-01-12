@@ -66,7 +66,7 @@ router.post('/signup',  (req, res) => {
         req.session.user_id = newUser.id;
         //sets logged_in true in the sessions
         req.session.logged_in = true;
-        req.session.username =userData.username;
+        req.session.username =newUser.username;
         
         res.json({ user: newUser, message: 'You are now logged in!' });
       });
