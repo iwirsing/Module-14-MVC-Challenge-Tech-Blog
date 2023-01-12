@@ -1,13 +1,13 @@
 
-<div class="container article-display">
-    <h4>Dashboard: your blog headquarters...</h4>
-</div>
+
+<h3 class="text-success">DASHBOARD</h3>
+
 <article class="article">
 <h5>Your Published Articles:</h5>
     {{#each articles as |article| }}
         <div class="card">
         <div class="card-header">
-        <h3><a class="link" href="/article/{{id}}">{{title}}</a></h3>
+        <h3><a class="link" href="/api/edit/{{id}}">{{title}}</a></h3>
             <p>Posted on {{createdAt}}</p>
         </div>
         <p class="card-body">{{content}}</p>

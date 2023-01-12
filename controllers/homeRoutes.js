@@ -70,13 +70,8 @@ router.get('/article/:id', withAuth, async (req,res) => {
             //check
             console.log('line 71 at homeroutes');
 
-            // res.status(200).json(data);
-
-            // res.status(200);
-
         });
-    
-        
+       
     }catch (err) {
         res.status(500).json(err);
     }
