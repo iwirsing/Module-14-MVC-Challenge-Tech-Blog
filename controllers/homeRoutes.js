@@ -25,7 +25,7 @@ router.get('/', async (req,res)=>{
             //check
             console.log('line 17 at homeroutes');
 
-            res.render('homepage',{articles});
+            res.render('homepage',{articles,logged_in: req.session.logged_in,});
             
             res.status(200);
 
@@ -39,10 +39,9 @@ router.get('/', async (req,res)=>{
 });
 
 //click on article and see the comments
-router.get('/article/:id', async (req,res) => {
+router.get('/article/:id', withAuth, async (req,res) => {
     try{
-        //get parameter
-        const idNum=req.params.id;
+
         //get data from database
         const articleData = await Article.findOne({
             where:{id:req.params.id},
@@ -67,7 +66,7 @@ router.get('/article/:id', async (req,res) => {
             
             const data = article.get({plain:true});
 
-            res.render('single-article',{data});
+            res.render('single-article',{data,logged_in: req.session.logged_in,current_user: req.session.username});
             //check
             console.log('line 71 at homeroutes');
 
@@ -84,7 +83,15 @@ router.get('/article/:id', async (req,res) => {
 
 });
 
-
+//logging in
+router.get('/login', (req, res) => {
+    if (req.session.logged_in) {
+      res.redirect('/');
+      return;
+    }
+  
+    res.render('login');
+  });
 
 //get all articles with comments
 router.get('/comment', async (req,res)=>{
