@@ -5,6 +5,16 @@
         "article_id": 1
     },
     {
+        "content": "That's quite complex but it makes sense.",
+        "username_id": 1,
+        "article_id": 1
+    },
+    {
+        "content": "Separation of concerns to the rescue!.",
+        "username_id": 2,
+        "article_id": 1
+    },
+    {
         "content": "So Sequelize does abstract SQL commands. I have lots more to learn!",
         "username_id": 1,
         "article_id": 3

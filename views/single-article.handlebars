@@ -1,0 +1,22 @@
+{{>articles data}}
+
+
+<div class="comments">
+    <h5>Comment Section</h5>
+    
+    {{#each data.comments as |comment|}}
+
+        <div class="card">
+            <h5 class="card-header"></h5>
+            <section class="comment card-body">
+                <div class="content">
+                    {{content}}
+                </div>
+                <div class="meta">
+                    -{{user.username}} commented on {{createdAt}}
+                </div>
+            </section>
+        </div>
+
+    {{/each}}
+</div>

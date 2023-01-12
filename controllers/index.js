@@ -1,7 +1,15 @@
 const router = require('express').Router();
-const apiRoutes = require('./api');
+// const apiRoutes = require('./api');
 
-route.use('/',require('./homeRoutes'));
+router.use('/',require('./homeRoutes'));
 
+
+
+
+
+//when all other routes entered
+router.use((req, res) => {
+    res.send("<h1>Wrong Route!</h1>")
+});
 
 module.exports = router;
