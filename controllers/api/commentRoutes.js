@@ -3,7 +3,7 @@ const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 //route for posting comment
-router.post('/comment', withAuth,  (req, res) => {
+router.post('/', withAuth,  (req, res) => {
     try {
     
         console.log('line 8 at commentroutes.js');

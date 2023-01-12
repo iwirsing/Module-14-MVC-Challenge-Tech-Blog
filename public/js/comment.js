@@ -5,31 +5,24 @@ const commentFormHandler = async (event) => {
     const content = document.querySelector('#username-comment').value.trim();
     const article_id = document.querySelector('#article-id').innerHTML;
 
-    console.log(content, article_id);
-
     if (content && article_id) {
     
         console.log('line 12 in comment.js');
+        console.log(content, article_id);
 
-        await fetch('/api/comment', {
+        const newComment = await fetch('/api/comment', {
             method: 'POST',
             body: JSON.stringify({ content, article_id }),
             headers: { 'Content-Type': 'application/json' },
-        }).then(response=> {
+        }).then(response=> response.json())
+        .then(data=> {
             console.log('Comment success');
+            document.location.reload();
+            
         }).catch((err)=>{
-            res.status(400).json(err);
+            console.error(err);
         });
-  
-    //   if (response.ok) {
-        
-    //     // document.location.reload();
-    //   } else {
-    //     alert('Comment content cannot be empty.');
-    //   }
-    // }
-  };
-};
-
+    };
+}; //closes function
   const commentBtn=document.getElementById("comment");
   commentBtn.addEventListener("click", commentFormHandler);
