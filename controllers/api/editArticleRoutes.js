@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Article } = require('../../models');
 const withAuth = require('../../utils/auth');
+var helpers = require('handlebars-helpers')();
 
 //route for viewing edit page
 router.get('/:id', withAuth, async (req,res) => {

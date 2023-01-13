@@ -3,6 +3,7 @@ const userRoutes = require('./userRoutes');
 const commentRoutes = require('./commentRoutes');
 const dashboardRoutes = require('./dashboardRoutes');
 const editArticleRoutes = require('./editArticleRoutes');
+var helpers = require('handlebars-helpers')();
 
 router.use('/users', userRoutes);
 router.use('/comment', commentRoutes);

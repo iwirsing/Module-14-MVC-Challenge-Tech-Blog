@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+var helpers = require('handlebars-helpers')();
 
 //route for logging in
 router.post('/login', async (req, res) => {

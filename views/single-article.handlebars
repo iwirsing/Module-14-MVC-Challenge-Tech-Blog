@@ -6,17 +6,7 @@
     
     {{#each data.comments as |comment|}}
 
-        <div class="card">
-            <h5 class="card-header"></h5>
-            <section class="comment card-body">
-                <div class="content">
-                    {{content}}
-                </div>
-                <div class="meta">
-                    -{{user.username}} commented on {{createdAt}}
-                </div>
-            </section>
-        </div>
+        {{>comments comment}}
 
     {{/each}}
 

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
+var helpers = require('handlebars-helpers')();
 
 //route for posting comment
 router.post('/', withAuth,  (req, res) => {

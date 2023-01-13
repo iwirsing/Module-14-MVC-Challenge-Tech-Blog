@@ -2,6 +2,7 @@ const sequelize = require('../../config/connection');
 const router = require('express').Router();
 const { Article, User } = require('../../models');
 const withAuth = require('../../utils/auth');
+var helpers = require('handlebars-helpers')();
 
 //route for viewing dashboard and one's own posts
 router.get('/', withAuth, async (req,res)=>{
