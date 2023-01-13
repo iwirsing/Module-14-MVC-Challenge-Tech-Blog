@@ -1,9 +1,9 @@
 
 
-<h3 class="text-success">DASHBOARD</h3>
+{{!-- <h3 class="text-success">DASHBOARD</h3> --}}
 
 <article class="article">
-<h5>Your Published Articles:</h5>
+<h3>DASHBOARD: Published Articles</h3>
     {{#each articles as |article| }}
         <div class="card">
         <div class="card-header">
@@ -22,10 +22,10 @@
 
 </div>
 
-<div class="container article-create">
+<div class="container article-create bg-secondary bg-gradient">
     <h5>Create New Article</h5>
 
-    <form class="form article-form">
+    <form class="form article-form">    
         <div class="form-group">
             <label for="article-title" class="form-label">Title</label>
             <input class="form-input w-100" type="text" id="article-title" />

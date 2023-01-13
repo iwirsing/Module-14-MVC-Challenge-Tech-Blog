@@ -1,6 +1,9 @@
     <h5>Edit Article</h5>
+   
+   <div class="container bg-secondary bg-gradient">
 
-    <form class="form article-form">
+
+    <form class="form article-form ">
         <div class="form-group">
             <label for="article-title" class="form-label">Title</label>
             <input class="form-input w-100" type="text" id="article-title" value="{{data.title}}"/>
@@ -16,6 +19,8 @@
         <button class="btn btn-danger" type="article" id="delete">Delete</button>
         </div>
     </form>
+   </div>
+   
     <p id="articleID" style="visibility:hidden;">{{data.id}}</p>
 
      <script src="/js/editDeleteArticle.js"></script>
