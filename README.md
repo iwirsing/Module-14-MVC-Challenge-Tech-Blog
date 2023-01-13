@@ -15,10 +15,9 @@ A CMS style blog aite where developers can publish their tech articles and comme
 
 ## Deployed Application
 
-1Go to the deployed website: https://tech-blog-wirsing.herokuapp.com/
+Go to the deployed website: https://tech-blog-wirsing.herokuapp.com/
 
 ## Usage 
-
 Interact with the website.
 
 ## Contributing 
