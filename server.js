@@ -3,7 +3,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const path = require('path');
-const helpers = require('./utils/helpers');
+
 
 //creates express server
 const app = express();
